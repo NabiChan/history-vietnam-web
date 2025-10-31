@@ -540,6 +540,29 @@ body.dark .switch::before{
         height: 200px;
         width: 100%;
     }
+
+    .multi_holder h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .multi_holder .row{
+        flex-direction: column;
+    }
+    .multi_holder .text{
+        text-align: left;
+        line-height: 1.3;
+        font-size: 15px;
+    }
+    .multi_holder .row.reverse{
+        flex-direction: column !important;
+    }
+    .multi_holder .col:first-child{
+        width: 100% !important;
+        height: 300px;
+    }
+    .multi_holder .col:last-child{
+        width: 100%;
+    }
 }
 
 #prehistoric{
@@ -576,4 +599,78 @@ body.dark .switch::before{
     background-size: cover;
     height: 450px;
     border-radius: 15px;
+}
+
+.containermain h2 span{
+    border-bottom: 5px solid red;
+}
+
+.multi_holder .lead{
+    color: var(--main-lead-color);
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.multi_holder{
+    padding: 64px 0;
+    background-color: var(--second-body-color);
+}
+
+.multi_holder .containermain{
+    margin-bottom: 30px;
+}
+
+.multi_holder .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multi_holder .col:first-child{
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    height: 550px;   
+}
+
+.multi_holder .col:last-child{
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.multi_holder .col.vanlang{
+    background-image: url(./images/vanlang.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.nanyue{
+    background-image: url(./images/nanyue.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+.multi_holder .text{
+    color: var(--main-text-color);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.multi_holder .row.reverse{
+    flex-direction: row-reverse;
 }
