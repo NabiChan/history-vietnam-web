@@ -447,3 +447,133 @@ body.dark .switch::before{
         padding-inline:2.5rem;
     }
 }
+
+/* Templates inside the timeline websites */
+.pop{
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.containermain{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1120px;
+}
+
+.sidebar.close ~ .main{
+    width: calc(100% - 88px);
+    margin-left: 88px;
+}
+
+.main{
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: var(--tran-05);
+}
+
+#hero{
+    background-image: url(./images/feudal_vn.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+    transition: var(--tran-05);
+}
+
+.hero_inner{
+    z-index: 2;
+    color: #FFD700;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:768px){
+    #hero{
+        height: 300px;
+    }
+    .hero_inner{
+        font-size: 30px;
+    }
+
+    .title{
+      font-size: 10px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    #prehistoric{
+        margin-bottom: 60px;
+    }
+    #prehistoric h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    #prehistoric .text{
+        font-size: 25px;
+        line-height: 1;
+    }
+
+    #prehistoric .flex{
+        flex-direction: column-reverse;
+    }
+
+    .col-2{
+        width: 100%;
+    }
+
+    .prehistoric-img{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+#prehistoric{
+    margin-bottom: 120px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#prehistoric h3{
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.col-2{
+    width: 48%;
+}
+
+#prehistoric .text{
+    color: var(--main-text-color);
+    font-size: 18px;
+    line-height: 2;
+}
+
+.prehistoric-img{
+    background-image: url(./images/prehistoric.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    border-radius: 15px;
+}
