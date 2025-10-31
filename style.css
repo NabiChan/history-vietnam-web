@@ -1,0 +1,33 @@
+* {
+    font-family: 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Color for body and nav bar */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* Transition */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    background: var(--body-color);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: var(--tran-05);
+}
+
+/* sidebar */
