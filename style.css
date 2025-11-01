@@ -107,8 +107,13 @@ header .header-text{
     top: 50%;
     right: -25px;
     transform: translateY(-50%);
-    height: 25px;
-    width: 25px;
+    -webkit-mask-image: url(./icons/menu-svgrepo-com.svg);
+    mask-image: url(./icons/menu-svgrepo-com.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    height: 35px;
+    width: 35px;
     background: var(--primary-color);
     display:flex;
     align-items: center;
@@ -143,6 +148,8 @@ body.dark .sidebar header .toggle{
 
 .sidebar li .icon{
     min-width: 60px;
+    height: 30px;
+    width: 30px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -159,16 +166,33 @@ body.dark .sidebar header .toggle{
     transition: var(--tran-04);
 }
 
+.sidebar li .icon,
+.menu-bar .mode .icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-color);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: var(--tran-02);
+}
+
 .sidebar li a:hover{
     background: var(--primary-color);
 }
 
-.sidebar li a:hover .icon,
+.sidebar li a:hover .icon{
+    background: var(--sidebar-color);
+}
+
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
 
-body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .icon{
+    background: var(--text-color);
+}
+
 body.dark .sidebar li a:hover .text{
     color: var(--text-color);
 }
@@ -184,6 +208,10 @@ body.dark .sidebar li a:hover .text{
     position: relative;
     border-radius: 6px;
     background: var(--primary-color-light);
+}
+
+.menu-bar .mode .icon{
+    position: absolute;
 }
 
 .menu-bar .mode .moon-sun{
@@ -247,6 +275,30 @@ body.dark .menu-bar .mode .moon{
 
 body.dark .switch::before{
     left: 25px;
+}
+
+.icon.house{
+    mask-image:url(./icons/home-4-svgrepo-com.svg);
+}
+
+.icon.trophy{
+    mask-image:url(./icons/trophy-svgrepo-com.svg);
+}
+
+.icon.book{
+    mask-image:url(./icons/book-svgrepo-com.svg);
+}
+
+.icon.moon{
+    mask-image:url(./icons/moon-svgrepo-com.svg);
+}
+
+.icon.sun{
+    mask-image:url(./icons/sun-2-svgrepo-com.svg);
+}
+
+.toggle.menu {
+    mask-image: url(./icons/menu-svgrepo-com.svg);
 }
 
 /* Homepage */
@@ -584,7 +636,7 @@ body.dark .switch::before{
     .upper_image .lead{
         text-align: center;
         font-size: 16px !important;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         line-height: 1.3;
     }
 }
