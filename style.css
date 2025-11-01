@@ -563,6 +563,30 @@ body.dark .switch::before{
     .multi_holder .col:last-child{
         width: 100%;
     }
+
+    .upper_image .imgbox{
+        text-align: center;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1120px;
+    }
+    .upper_image .imgbox img{
+        width: 100%;
+    }
+    .upper_image .text{
+        text-align: left;
+        font-size: 16px !important;
+        line-height: 1.3;
+    }
+
+    .upper_image .lead{
+        text-align: center;
+        font-size: 16px !important;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
 }
 
 #prehistoric{
@@ -651,6 +675,30 @@ body.dark .switch::before{
     border-bottom-right-radius: 10px;
 }
 
+.multi_holder .col.haibatrung_revolution{
+    background-image: url(./images/vanlang.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.lady_trieu{
+    background-image: url(./images/lady_trieu.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.van_xuan{
+    background-image: url(./images/vanxuan.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.autonomus_era{
+    background-image: url(./images/image.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .multi_holder .col.nanyue{
     background-image: url(./images/nanyue.png);
     border-top-right-radius: 10px;
@@ -673,4 +721,45 @@ body.dark .switch::before{
 
 .multi_holder .row.reverse{
     flex-direction: row-reverse;
+}
+
+.upper_image{
+    padding: 64px 0;
+}
+
+.upper_image .imgbox{
+    text-align: center;
+}
+
+.upper_image .text_holder{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1120px;
+}
+
+.upper_image .imgbox img{
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.upper_image .text{
+    color: var(--main-text-color);
+    text-align: left;
+    font-size: 23px;
+    line-height: 1.8;
+}
+
+
+.upper_image .lead{
+    color: var(--main-text-color);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
