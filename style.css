@@ -12,6 +12,7 @@
     --primary-color: #695CFE;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
+    --housebar-color:#695CFE;
     --text-color: #707070;
     --main-text-color: #000000;
     --main-lead-color: #000000;
@@ -40,6 +41,7 @@ body.dark {
     --primary-color: #3A3B3C;
     --primary-color-light: #3A3B3C;
     --toggle-color: #FFF;
+    --housebar-color:#FFF;
     --text-color: #CCC;
     --main-text-color: #E4E5EB;
     --main-lead-color: #E4E5EB;
@@ -114,7 +116,7 @@ header .header-text{
     mask-position: center;
     height: 35px;
     width: 35px;
-    background: var(--primary-color);
+    background: var(--housebar-color);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -501,6 +503,11 @@ body.dark .switch::before{
 }
 
 /* Templates inside the timeline websites */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins/Poppins-Regular.ttf');
+}
+
 .pop{
     font-family: 'Poppins', sans-serif;
 }
@@ -638,6 +645,52 @@ body.dark .switch::before{
         font-size: 16px !important;
         margin-bottom: 30px;
         line-height: 1.3;
+    }
+
+    .fourthholder{
+        margin: 0 auto;
+        padding: 30px 0;
+        margin-bottom: 80px;
+    }
+
+    .fourthholder .textandimgholder{
+        margin-left: 0;
+        width: 100% !important;
+    }
+
+    .fourthholder .col-2{
+        width: 100%;
+    }
+
+    .fourthholder .flex{
+        flex-direction: column-reverse;
+    }
+
+    .fourthholder h3{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .fourthholder h2 span{
+        border-bottom: 3px solid red;
+    }
+
+    .fourthholder .text{
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    .french-img-img{
+        height: 200px;
+        width: 100%;
+    }
+    .indochina-img{
+        height: 200px;
+        width: 100%;
+    }
+    .map-img{
+        height: 300px;
+        width: 100%;
     }
 }
 
@@ -814,4 +867,70 @@ body.dark .switch::before{
     margin-bottom: 40px;
     font-weight: 700;
     margin-bottom: 50px;
+}
+
+.fourthholder{
+    margin: 0 auto;
+    padding: 64px 0;
+    width: 100%;
+    margin-bottom: 120px;
+    background-color: var(--second-body-color);
+}
+
+.fourthholder .textandimgholder{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.fourthholder .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fourthholder h3{
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.fourthholder h2 span{
+    color: red;
+    border-bottom: 5px solid red;
+}
+
+.fourthholder .text{
+    color: var(--main-text-color);
+    font-size: 20px;
+    line-height: 2;
+}
+
+.french-img{
+    background-image: url(./images/french_invasion.png);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.indochina-img{
+    background-image: url(./images/indochina.png);
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    border-radius: 15px;
+}
+
+.map-img{
+    background-image: url(./images/map.png);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.fourthholder .flex.reverse{
+    flex-direction:row-reverse;
 }
