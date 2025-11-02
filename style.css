@@ -552,6 +552,36 @@ body.dark .switch::before{
     transition: var(--tran-05);
 }
 
+#hero2{
+    background-image: url(./images/helicoptervnwar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+    transition: var(--tran-05);
+}
+
+#hero3{
+    background-image: url(./images/pexels-qhung999-2965773.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+    transition: var(--tran-05);
+}
+
 .hero_inner{
     z-index: 2;
     color: #FFD700;
@@ -568,7 +598,13 @@ body.dark .switch::before{
     .hero_inner{
         font-size: 30px;
     }
-
+    #hero2{
+        height: 300px;
+    }
+    #hero3{
+        height: 300px;
+    }
+    
     .title{
       font-size: 10px;
       font-weight: 500;
@@ -596,6 +632,14 @@ body.dark .switch::before{
     }
 
     .prehistoric-img{
+        height: 200px;
+        width: 100%;
+    }
+    .august-img{
+        height: 200px;
+        width: 100%;
+    }
+    .tactic-img{
         height: 200px;
         width: 100%;
     }
@@ -722,6 +766,22 @@ body.dark .switch::before{
     line-height: 2;
 }
 
+.august-img{
+    background-image: url(./images/august_revolution.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.tactic-img{
+    background-image: url(./images/image.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    border-radius: 15px;
+}
+
 .prehistoric-img{
     background-image: url(./images/prehistoric.png);
     background-position: center;
@@ -780,14 +840,38 @@ body.dark .switch::before{
     border-bottom-right-radius: 10px;
 }
 
+.multi_holder .col.mapcambodiawar{
+    background-image: url(./images/mapofcambodia_vn_war.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.map1979war{
+    background-image: url(./images/mapof1979.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .multi_holder .col.haibatrung_revolution{
-    background-image: url(./images/vanlang.png);
+    background-image: url(./images/trungrevolution.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.indochina1950{
+    background-image: url(./images/indochina.png);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .multi_holder .col.lady_trieu{
     background-image: url(./images/lady_trieu.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.taleofkieu{
+    background-image: url(./images/taleofkieu.png);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -804,8 +888,20 @@ body.dark .switch::before{
     border-bottom-right-radius: 10px;
 }
 
+.multi_holder .col.aircraft{
+    background-image: url(./images/USS_Belleau_Wood.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .multi_holder .col.nanyue{
     background-image: url(./images/nanyue.png);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi_holder .col.dienbienphu{
+    background-image: url(./images/dien_bien_phu.png);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
