@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese History</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+ <body>
+    <!-- Navigation bar help to get other website -->
+    <nav class="sidebar close">
+        <header>
+            <div class="text header-text">
+                <span class='tieude1'>A Website About</span>
+                <span class='tieude2'>Vietnamese History</span>
+            </div>
+            <div class="toggle menu"></div>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <div class="icon house"></div>
+                            <span class='text nav-text'>Main</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="challenge.html">
+                            <div class="icon trophy"></div>
+                            <span class='text nav-text'>Challenge</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="learnmore.html">
+                            <div class="icon book"></div>
+                            <span class='text nav-text'>Learn More</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="timeline.html">
+                            <div class="icon time"></div>
+                            <span class='text nav-text'>Quick timeline</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- This help to modify dark and light mode -->
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <div class="icon moon"></div>
+                        <div class="icon sun"></div>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main information holder is here -->
+    <main class="mainforquiz">
+        <!-- Setting for the question -->
+         <div class="config-container">
+            <h2 class="config-text">Quiz Configuration</h2>
+            <div class="setting">
+                <label for="num-question">Number of Questions:</label>
+                <div class="num-question">
+                    <button class="question_optionNum active">5</button>
+                    <button class="question_optionNum">10</button>
+                    <button class="question_optionNum">15</button>
+                    <button class="question_optionNum">20</button>
+                </div>
+
+                <label for="time-line">Select Timeline:</label>
+                <div class="time-line">
+                    <button class="chosen-time active">before-1945</button>
+                    <button class="chosen-time">1945-1975</button>
+                    <button class="chosen-time">1975-Now</button>
+                </div>
+            </div>
+            <button class="start-quiz-btn">Start Quiz</button>
+         </div>
+
+         <!-- Quiz container -->
+          <div class="quiz-popup popup-container">
+            <div class="quiz-container quiz-box">
+                <header class="quiz-header">
+                    <h2 class="quiz-title">Challenge Question</h2>
+                    <div class="quiz-timer">
+                        <div class="icon time"></div>
+                        <p class="timer-duration"></p>
+                    </div>
+                </header>
+
+                <div class="quiz-content">
+                    <p class="question-text"></p>
+                    <ul class="answer-options"></ul>
+                </div>
+
+                <div class="question-footer">
+                    <p class="question-status"></p>
+                    <button class="next-question-btn">Next</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- show result -->
+           <div class="result-popup popup-container">
+            <div class="result-container quiz-box">
+                <h2 class="result-title">Challenge Completed!</h2>
+                <p class="show-message"></p>
+                <button class="try-again-btn">Try Again</button>
+            </div>
+           </div>
+    </main>
+
+    <script type="text/javascript" src="function.js"></script>
+     <script type="text/javascript" src="question.js"></script>
+ </body>
+ </html>
