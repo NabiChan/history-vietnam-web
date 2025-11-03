@@ -1495,3 +1495,166 @@ body.dark .switch::before{
         transform:translateX(-50%);
     }
 }
+
+/* MAke book design for read more */
+.sidebar.close ~ .main_readmore{
+    width: calc(100% - 88px);
+    margin-left: 88px;
+}
+
+.main_readmore{
+    min-height: 100vh;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, var(--second-body-color) 50%, #4a1010 50%)
+}
+
+.main_readmore input{
+    display: none;
+}
+
+.main_readmore img{
+    width: 100%;
+    height: 100%;
+}
+
+.bookdiv{
+    display: flex;
+}
+
+#cover{
+    width: 500px;
+    height: 550px;
+}
+
+.flip-book{
+    width: 500px;
+    height: 550px;
+    position: relative;
+    perspective: 1500px;
+}
+
+.flip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: var(--tran-05);
+    color:#000;
+}
+
+.main_readmore p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 0 13px;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    background-color: #0000;
+}
+
+.next-btn-readmore{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+}
+
+.back-btn-readmore{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color:#fff;
+}
+
+#p1{
+    z-index: 3;
+}
+
+#p2{
+    z-index: 2;
+}
+
+#p3{
+    z-index: 1;
+}
+
+#p3 p{
+    font-size: 12px;
+}
+
+#c1:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+#c2:checked ~ .flip-book #p2{
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p3{
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+@media (max-width:624px){
+    #cover{
+        width: 300px;
+        height: 350px;
+    }
+
+    .flip-book{
+        width: 300px;
+        height: 350px;
+        perspective: 1000px;
+    }
+    .front{
+        padding: 0 8px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .next-btn-readmore{
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .back-btn-readmore{
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #p3 p{
+        font-size: 8px;
+    }
+}
