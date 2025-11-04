@@ -1115,7 +1115,7 @@ body.dark .switch::before{
 .quiz-container{
     background: var(--quiz-container-color);
     border-radius: 8px;
-    width: 480px;
+    max-width: 480px;
     display: none;
 }
 
@@ -1123,7 +1123,7 @@ body.dark .switch::before{
     display: flex;
     align-items: center;
     padding: 14px 25px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .quiz-container .quiz-title{
@@ -1285,23 +1285,54 @@ body.dark .switch::before{
 @media (max-width:340px){
     .config-container,
     .quiz-container .quiz-content{
+        padding: 7px;
+    }
+
+    .quiz-content .answer-options{
+        padding: 7px 5px 7px 9px;
+    }
+    
+    .config-container .answer-options{
+        padding: 0 8px;
+    }
+
+    .quiz-container .quiz-header,.quiz-container .question-footer{
+        padding: 8px 15px;
+    }
+
+    .quiz-header .quiz-title, .quiz-content .question-text{
+        font-size: 0.75rem;
+    }
+
+    .result-container{
+        padding: 25px 5px;
+    }
+
+    .result-container .result-title{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:624px){
+    .config-container,
+    .quiz-container .quiz-content{
         padding: 10px;
     }
 
     .quiz-content .answer-options{
-        padding: 10px 8px 10px 12px;
+        padding: 8px 6px 8px 10px;
     }
     
     .config-container .answer-options{
-        padding: 0 13px;
+        padding: 0 10px;
     }
 
     .quiz-container .quiz-header,.quiz-container .question-footer{
-        padding: 10px 17px;
+        padding: 10px 25px;
     }
 
     .quiz-header .quiz-title, .quiz-content .question-text{
-        font-size: 1.0rem;
+        font-size: 1rem;
     }
 
     .result-container{
@@ -1310,37 +1341,6 @@ body.dark .switch::before{
 
     .result-container .result-title{
         font-size: 1rem;
-    }
-}
-
-@media (max-width:624px){
-    .config-container,
-    .quiz-container .quiz-content{
-        padding: 20px;
-    }
-
-    .quiz-content .answer-options{
-        padding: 12px 10px 12px 14px;
-    }
-    
-    .config-container .answer-options{
-        padding: 0 15px;
-    }
-
-    .quiz-container .quiz-header,.quiz-container .question-footer{
-        padding: 13px 20px;
-    }
-
-    .quiz-header .quiz-title, .quiz-content .question-text{
-        font-size: 1.3rem;
-    }
-
-    .result-container{
-        padding: 40px 20px;
-    }
-
-    .result-container .result-title{
-        font-size: 1.4rem;
     }
 }
 
